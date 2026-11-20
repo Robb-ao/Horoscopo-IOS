@@ -85,7 +85,15 @@
                         <viewLayoutGuide key="safeArea" id="GiI-8x-9Db"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Detail" id="gft-Km-BMh"/>
+                    <navigationItem key="navigationItem" title="Detail" id="gft-Km-BMh">
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="lzq-V5-9aE">
+                                <barButtonItems>
+                                    <barButtonItem title="Favorite" image="heart.fill" catalog="system" id="J7O-YL-e4Q"/>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V5j-A8-HCc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +120,7 @@
     </scenes>
     <resources>
         <image name="aries-icon" width="800" height="800"/>
+        <image name="heart.fill" catalog="system" width="128" height="111"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
