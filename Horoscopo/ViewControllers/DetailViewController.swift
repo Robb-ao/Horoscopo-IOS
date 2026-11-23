@@ -48,8 +48,12 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func shareMenuClicked(_ sender: Any) {
+        let text = "Este es el texto que quieres compartir"
         
+        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityViewController, animated: true, completion: nil)
     }
-
-
 }
