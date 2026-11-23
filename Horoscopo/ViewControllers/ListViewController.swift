@@ -26,7 +26,12 @@ class ListViewController: UIViewController, UITableViewDataSource, UISearchBarDe
         navigationItem.searchController = searchController
         
         tableView.dataSource = self
+    }
+    
+    override func viewWillAppear (_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+        tableView.reloadData()
     }
     
     //MARK: TableView DataSource
